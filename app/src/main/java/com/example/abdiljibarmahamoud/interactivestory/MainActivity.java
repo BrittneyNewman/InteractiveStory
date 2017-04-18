@@ -1,6 +1,7 @@
 package com.example.abdiljibarmahamoud.interactivestory;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 startStory(name);
 
             }
-
             
         }) ;
     }
 
     private void startStory(String name) {
      Intent intent = new Intent( this, StoryActivity.class );
+        Resources resources = getResources();
+        String key = resources.getString(R.string.key_name);
         intent.putExtra("name", name);
         startActivity(intent);
     }

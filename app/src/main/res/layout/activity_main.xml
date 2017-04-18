@@ -8,7 +8,7 @@
     tools:context="com.example.abdiljibarmahamoud.interactivestory.MainActivity">
 
     <ImageView
-        android:contentDescription="Signals from Mars title image"
+        android:contentDescription="@string/signals_from_mars_title_image"
         android:id="@+id/titleImageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
