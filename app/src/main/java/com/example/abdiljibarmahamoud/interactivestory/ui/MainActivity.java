@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
             
         }) ;
+
     }
 
     private void startStory(String name) {
